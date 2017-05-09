@@ -1,11 +1,11 @@
 import tensorflow as tf
 
 # create data features and labels
-list_filename = ['renault/download00.jpg', 'renault/download01.jpg', 'renault/download02.jpg',
-                 'renault/download03.jpg', 'renault/download04.jpg', 'renault/download05.jpg',
-                 'renault/download06.jpg', 'renault/download07.jpg', 'renault/download08.jpg',
-                 'renault/download09.jpg', 'renault/download10.jpg', 'renault/download11.jpg',
-                 'renault/download12.jpg', 'renault/download13.jpg']
+list_filename = ['cars/download00.jpg', 'cars/download01.jpg', 'cars/download02.jpg',
+                 'cars/download03.jpg', 'cars/download04.jpg', 'cars/download05.jpg',
+                 'cars/download06.jpg', 'cars/download07.jpg', 'cars/download08.jpg',
+                 'cars/download09.jpg', 'cars/download10.jpg', 'cars/download11.jpg',
+                 'cars/download12.jpg', 'cars/download13.jpg']
 
 input_queue = tf.train.string_input_producer(list_filename, shuffle=True, seed=True)
 
